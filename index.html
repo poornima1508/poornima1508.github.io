@@ -24,13 +24,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .glass-card {
-            background: rgba(19, 27, 46, 0.7);
+            background: rgba(19, 27, 46, 0.75);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.18);
         }
         .glass-card:hover {
-            border-color: rgba(59, 130, 246, 0.4);
-            box-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.45);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
         }
         .gradient-text {
             background: linear-gradient(135deg, #60a5fa 0%, #22d3ee 100%);
@@ -42,7 +42,7 @@
 <body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
 
     <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/85 backdrop-blur-md border-b border-gray-800">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800/80">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 <span class="text-blue-500 font-mono">&lt;</span>Poornima<span class="text-cyan-400 font-mono">/&gt;</span>
@@ -58,10 +58,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.08),transparent_50%)]"></div>
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-16 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.1),transparent_60%)] pointer-events-none"></div>
         <div class="max-w-5xl mx-auto text-center relative z-10">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6 uppercase tracking-wider">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6 uppercase tracking-wider">
                 <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Available for FDE & AI Roles
             </div>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6">
@@ -70,21 +70,21 @@
             <p class="text-xl sm:text-2xl font-medium gradient-text mb-6">
                 Forward Deployed AI Engineer | LLMs, RAG & Multi-Agent Systems
             </p>
-            <p class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg mb-10 leading-relaxed">
+            <p class="max-w-2xl mx-auto text-gray-300 text-base sm:text-lg mb-10 leading-relaxed">
                 Bridging advanced Generative AI architectures with complex enterprise environments[cite: 1]. Specializing in production-grade RAG systems, telemetry APIs, and robust workflow automation.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="#projects" class="px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
                     <i class="fa-solid fa-code"></i> View Featured Project
                 </a>
-                <a href="#contact" class="px-8 py-3.5 rounded-xl glass-card hover:bg-gray-800 text-white font-medium transition flex items-center gap-2">
+                <a href="#contact" class="px-8 py-3.5 rounded-xl glass-card hover:bg-gray-800/80 text-white font-medium transition flex items-center gap-2">
                     <i class="fa-regular fa-envelope"></i> Contact Me
                 </a>
             </div>
             <div class="mt-14 flex justify-center space-x-6 text-gray-400 text-xl">
-                <a href="https://www.linkedin.com/in/poornimaas" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/poornima1508" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:as.pornima@gmail.com" class="hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/poornimaas" target="_blank" class="hover:text-blue-400 transition" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/poornima1508" target="_blank" class="hover:text-white transition" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:as.pornima@gmail.com" class="hover:text-cyan-400 transition" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </section>
@@ -97,37 +97,39 @@
                 <div class="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div class="glass-card p-8 rounded-2xl">
-                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-bullseye text-blue-400"></i> The FDE Approach
-                    </h3>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        I am an AI Engineer combining robust backend software engineering foundations with hands-on Generative AI implementation[cite: 1]. Having spent nearly 4 years managing enterprise systems and cloud workflows at Wipro[cite: 1, 2], I specialize in deploying scalable solutions that directly address client operational hurdles.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        Currently completing my **MS in Analytics at Saint Louis University** (Graduating December 2026)[cite: 1], my focus lies in custom AI deployments, vector retrieval optimization, and multi-agent workflow orchestration[cite: 1].
+                <div class="glass-card p-8 rounded-2xl h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-bullseye text-blue-400"></i> The FDE Approach
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            I am an AI Engineer combining robust backend software engineering foundations with hands-on Generative AI implementation[cite: 1]. Having spent nearly 4 years managing enterprise systems and cloud workflows at Wipro[cite: 1, 2], I specialize in deploying scalable solutions that directly address client operational hurdles.
+                        </p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed border-t border-gray-800 pt-4 mt-2">
+                        Currently completing my <strong class="text-white">MS in Analytics at Saint Louis University</strong> (Graduating December 2026)[cite: 1], my focus lies in custom AI deployments, vector retrieval optimization, and multi-agent workflow orchestration[cite: 1].
                     </p>
                 </div>
                 <div class="space-y-6">
                     <div class="glass-card p-6 rounded-xl flex items-start gap-4">
-                        <div class="p-3 bg-blue-500/10 text-blue-400 rounded-lg text-xl"><i class="fa-solid fa-brain"></i></div>
+                        <div class="p-3 bg-blue-500/10 text-blue-400 rounded-lg text-xl shrink-0"><i class="fa-solid fa-brain"></i></div>
                         <div>
                             <h4 class="text-white font-semibold mb-1">Generative AI & LLMs</h4>
-                            <p class="text-gray-400 text-sm">Building production RAG pipelines, vector search, multi-agent frameworks, and retrieval evaluation (NDCG@10, MRR)[cite: 1].</p>
+                            <p class="text-gray-300 text-sm leading-relaxed">Building production RAG pipelines, vector search, multi-agent frameworks, and retrieval evaluation (NDCG@10, MRR)[cite: 1].</p>
                         </div>
                     </div>
                     <div class="glass-card p-6 rounded-xl flex items-start gap-4">
-                        <div class="p-3 bg-cyan-500/10 text-cyan-400 rounded-lg text-xl"><i class="fa-solid fa-server"></i></div>
+                        <div class="p-3 bg-cyan-500/10 text-cyan-400 rounded-lg text-xl shrink-0"><i class="fa-solid fa-server"></i></div>
                         <div>
                             <h4 class="text-white font-semibold mb-1">Backend & Telemetry APIs</h4>
-                            <p class="text-gray-400 text-sm">Developing backend web applications using FastAPI, Pydantic, SQLAlchemy, and Jinja2Templates for real-time tracking.</p>
+                            <p class="text-gray-300 text-sm leading-relaxed">Developing backend web applications using FastAPI, Pydantic, SQLAlchemy, and Jinja2Templates for real-time tracking.</p>
                         </div>
                     </div>
                     <div class="glass-card p-6 rounded-xl flex items-start gap-4">
-                        <div class="p-3 bg-indigo-500/10 text-indigo-400 rounded-lg text-xl"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <div class="p-3 bg-indigo-500/10 text-indigo-400 rounded-lg text-xl shrink-0"><i class="fa-solid fa-cloud-arrow-up"></i></div>
                         <div>
                             <h4 class="text-white font-semibold mb-1">Enterprise Infrastructure</h4>
-                            <p class="text-gray-400 text-sm">Extensive background in REST APIs, AWS infrastructure automation via Terraform, and enterprise ticketing workflows.</p>
+                            <p class="text-gray-300 text-sm leading-relaxed">Extensive background in REST APIs, AWS infrastructure automation via Terraform, and enterprise ticketing workflows.</p>
                         </div>
                     </div>
                 </div>
@@ -143,14 +145,14 @@
                 <div class="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-brands fa-python text-3xl text-blue-400 mb-2"></i><div class="font-medium text-white">Python</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-solid fa-network-wired text-3xl text-cyan-400 mb-2"></i><div class="font-medium text-white">LangChain / LLMs</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-solid fa-database text-3xl text-blue-500 mb-2"></i><div class="font-medium text-white">FAISS & Elasticsearch</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-solid fa-bolt text-3xl text-yellow-400 mb-2"></i><div class="font-medium text-white">FastAPI & Pydantic</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-brands fa-aws text-3xl text-orange-400 mb-2"></i><div class="font-medium text-white">AWS & Terraform</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-solid fa-code-pull-request text-3xl text-purple-400 mb-2"></i><div class="font-medium text-white">REST APIs & JSON</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-solid fa-chart-line text-3xl text-green-400 mb-2"></i><div class="font-medium text-white">MLflow & Databricks</div></div>
-                <div class="glass-card p-4 rounded-xl text-center"><i class="fa-brands fa-docker text-3xl text-blue-300 mb-2"></i><div class="font-medium text-white">Docker & SQL</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-brands fa-python text-3xl text-blue-400 mb-3"></i><div class="font-medium text-white">Python</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-solid fa-network-wired text-3xl text-cyan-400 mb-3"></i><div class="font-medium text-white">LangChain / LLMs</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-solid fa-database text-3xl text-blue-500 mb-3"></i><div class="font-medium text-white">FAISS & Elasticsearch</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-solid fa-bolt text-3xl text-yellow-400 mb-3"></i><div class="font-medium text-white">FastAPI & Pydantic</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-brands fa-aws text-3xl text-orange-400 mb-3"></i><div class="font-medium text-white">AWS & Terraform</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-solid fa-code-pull-request text-3xl text-purple-400 mb-3"></i><div class="font-medium text-white">REST APIs & JSON</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-solid fa-chart-line text-3xl text-green-400 mb-3"></i><div class="font-medium text-white">MLflow & Databricks</div></div>
+                <div class="glass-card p-5 rounded-xl text-center transition hover:-translate-y-1"><i class="fa-brands fa-docker text-3xl text-blue-300 mb-3"></i><div class="font-medium text-white">Docker & SQL</div></div>
             </div>
         </div>
     </section>
@@ -174,32 +176,32 @@
 
                 <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">Cold-Chain Operations Copilot API</h3>
                 
-                <p class="text-gray-300 leading-relaxed mb-6">
+                <p class="text-gray-300 leading-relaxed mb-6 text-base sm:text-lg">
                     An end-to-end logistics and telemetry monitoring product featuring a dedicated dashboard user interface, automated anomaly detection flags, and a vector RAG compliance context engine designed to streamline perishable supply chain monitoring.
                 </p>
 
                 <div class="grid sm:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-darkBg/50 p-5 rounded-xl border border-gray-800">
-                        <h4 class="text-blue-400 font-semibold mb-2 flex items-center gap-2"><i class="fa-solid fa-gears"></i> Key Capabilities</h4>
-                        <ul class="text-gray-300 text-sm space-y-2">
-                            <li>• Real-time telemetry monitoring and status tracking APIs.</li>
-                            <li>• Automated anomaly flagging for temperature excursions.</li>
-                            <li>• Vector RAG compliance context retrieval for regulatory standards.</li>
+                    <div class="bg-darkBg/60 p-5 rounded-xl border border-gray-800">
+                        <h4 class="text-blue-400 font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-gears"></i> Key Capabilities</h4>
+                        <ul class="text-gray-300 text-sm space-y-2.5">
+                            <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">•</span> Real-time telemetry monitoring and status tracking APIs.</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">•</span> Automated anomaly flagging for temperature excursions.</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-400 mt-0.5">•</span> Vector RAG compliance context retrieval for regulatory standards.</li>
                         </ul>
                     </div>
-                    <div class="bg-darkBg/50 p-5 rounded-xl border border-gray-800">
-                        <h4 class="text-cyan-400 font-semibold mb-2 flex items-center gap-2"><i class="fa-solid fa-layer-group"></i> Architecture & Toolchain</h4>
-                        <ul class="text-gray-300 text-sm space-y-2">
-                            <li>• Backend: FastAPI, Pydantic, SQLAlchemy.</li>
-                            <li>• UI Templating: Jinja2Templates & responsive dashboard.</li>
-                            <li>• Telemetry processing & vector search integration.</li>
+                    <div class="bg-darkBg/60 p-5 rounded-xl border border-gray-800">
+                        <h4 class="text-cyan-400 font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-layer-group"></i> Architecture & Toolchain</h4>
+                        <ul class="text-gray-300 text-sm space-y-2.5">
+                            <li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">•</span> Backend: FastAPI, Pydantic, SQLAlchemy.</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">•</span> UI Templating: Jinja2Templates & responsive dashboard.</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">•</span> Telemetry processing & vector search integration.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="flex flex-wrap items-center gap-4">
-                    <a href="https://github.com/poornima1508" target="_blank" class="px-6 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition flex items-center gap-2">
-                        <i class="fa-brands fa-github"></i> View GitHub Repository
+                    <a href="https://github.com/poornima1508" target="_blank" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition flex items-center gap-2 shadow-lg shadow-blue-600/20">
+                        <i class="fa-brands fa-github text-base"></i> View GitHub Repository
                     </a>
                 </div>
             </div>
@@ -223,8 +225,8 @@
                         <h3 class="text-xl font-bold text-white mt-1">Student Worker - IT Asset Management</h3>
                         <h4 class="text-gray-400 text-sm mb-4">Saint Louis University</h4>
                         <ul class="text-gray-300 text-sm space-y-2">
-                            <li>• Resolved 100% of peripheral, transfer, and computer-imaging tickets across the department via structured workflows[cite: 2].</li>
-                            <li>• Maintained complete asset and inventory databases, cutting record-discrepancy incidents through standardized audits[cite: 2].</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-400">•</span> Resolved 100% of peripheral, transfer, and computer-imaging tickets across the department via structured workflows[cite: 2].</li>
+                            <li class="flex items-start gap-2"><span class="text-blue-400">•</span> Maintained complete asset and inventory databases, cutting record-discrepancy incidents through standardized audits[cite: 2].</li>
                         </ul>
                     </div>
                 </div>
@@ -237,10 +239,10 @@
                         <h3 class="text-xl font-bold text-white mt-1">Associate Consultant</h3>
                         <h4 class="text-gray-400 text-sm mb-4">Wipro Limited[cite: 2]</h4>
                         <ul class="text-gray-300 text-sm space-y-2">
-                            <li>• Automated access-provisioning workflows, reducing monthly support tickets from 100+ to 10–15 (85–90% workload reduction).</li>
-                            <li>• Automated AWS server rebuilds using Terraform, cutting rebuild time from ~8 hours to under 3 hours.</li>
-                            <li>• Tested and validated complex REST API integrations across enterprise applications using Postman and JSON.</li>
-                            <li>• Coordinated UAT, release cycles, and production deployments while resolving issues across ServiceNow, Jira, and Oracle ERP[cite: 2].</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400">•</span> Automated access-provisioning workflows, reducing monthly support tickets from 100+ to 10–15 (85–90% workload reduction).</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400">•</span> Automated AWS server rebuilds using Terraform, cutting rebuild time from ~8 hours to under 3 hours.</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400">•</span> Tested and validated complex REST API integrations across enterprise applications using Postman and JSON.</li>
+                            <li class="flex items-start gap-2"><span class="text-cyan-400">•</span> Coordinated UAT, release cycles, and production deployments while resolving issues across ServiceNow, Jira, and Oracle ERP[cite: 2].</li>
                         </ul>
                     </div>
                 </div>
@@ -252,14 +254,14 @@
     <section id="contact" class="py-24 px-6 border-t border-gray-800/60 relative">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Let's Connect</h2>
-            <p class="text-gray-400 mb-8">
+            <p class="text-gray-300 mb-8 text-base sm:text-lg">
                 I am actively seeking Forward Deployed AI Engineer, Applied AI, and Solutions Engineer roles[cite: 1]. Let's discuss how I can bring value to your engineering team.
             </p>
             <div class="glass-card p-8 rounded-2xl inline-block w-full max-w-xl text-center">
                 <div class="text-xl font-semibold text-white mb-2">Poornima Anamaneni Sayeeswaran[cite: 1]</div>
                 <div class="text-blue-400 mb-6 font-mono text-sm">as.pornima@gmail.com</div>
-                <div class="flex justify-center gap-4">
-                    <a href="mailto:as.pornima@gmail.com" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition flex items-center gap-2">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:as.pornima@gmail.com" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition flex items-center gap-2 shadow-lg shadow-blue-600/20">
                         <i class="fa-solid fa-envelope"></i> Send Email
                     </a>
                     <a href="https://www.linkedin.com/in/poornimaas" target="_blank" class="px-6 py-3 rounded-xl glass-card hover:bg-gray-800 text-white font-medium transition flex items-center gap-2">
